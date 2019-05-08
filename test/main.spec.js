@@ -46,10 +46,10 @@ describe('San Diego Top Spots', function() {
       })
   });
 
-  it('should find a row with data', function() {
+  it('should find a row with data', function() { 
     return nightmare
       .goto(url)
-      .wait('table')
+      .wait(2000)
       .evaluate(function () {
         return document.querySelector('tr td').innerHTML
       })
